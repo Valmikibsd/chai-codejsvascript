@@ -116,6 +116,26 @@ const items = students.map(s=>({
 
 
 
-console.log(details);
+
 
 console.log(items);
+
+const dailysala=2000;
+
+
+const userss = [
+  { name: "Amit", days: 24 },
+  { name: "Vamiki", days: 25 }
+];
+
+const ussal=userss.map(s=>({
+  name:s.name,
+  salary:s.days*dailysala
+}));
+
+const getmsal=userss.map(u=>({
+  username:u.name,
+  monthlysalary:u.days*dailysala
+}))
+
+console.log(getmsal);

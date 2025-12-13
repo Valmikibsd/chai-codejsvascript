@@ -67,3 +67,28 @@ const fullnames=apiData.map(u=>({
     fullname:`${u.first_name} ${u.last_name}`
 }));
 console.log(fullnames);
+
+
+const fruits = ["Apple", "Banana", "Mango"];
+
+
+const fruitwithindex=fruits.map((e,i)=>({
+    index:i+1,
+    fruit:e
+}));
+
+console.log(fruitwithindex);
+
+
+const marks = [35, 78, 90, 42];
+
+const rs=marks.map(e=>e>=40 ? "Pass" : "Fail");
+
+const res=marks.map((e,i)=>({
+    index:i+1,
+    mark:e,
+    result:e>=40 ? "Pass" : "Fail"
+}))
+
+console.log(rs);
+console.log(res);

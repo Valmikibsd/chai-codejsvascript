@@ -92,3 +92,30 @@ const res=marks.map((e,i)=>({
 
 console.log(rs);
 console.log(res);
+
+
+const students = [
+  { name: "Amit", subjects: ["Math", "Science"],marks: ["20", "30"] },
+  { name: "Vamiki", subjects: ["English", "History"],marks: ["40", "30"] }
+];
+
+const studentSubjects=students.map(s=>
+    s.subjects.map(sub=>`${s.name} - ${sub}`,
+    s.marks.map(m=>`${s.name} - ${m}`)));
+console.log(studentSubjects);
+
+
+const items = students.map(s=>({
+  sname:s.name,
+  results:s.subjects.map((sub,i)=>({
+    subject:sub,
+    mark:Number(s.marks[i])
+  }))
+  
+}));
+
+
+
+console.log(details);
+
+console.log(items);

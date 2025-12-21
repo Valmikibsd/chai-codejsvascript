@@ -112,7 +112,7 @@ const items = students.map(s=>({
     mark:Number(s.marks[i])
   }))
   
-}));
+}));  
 
 
 

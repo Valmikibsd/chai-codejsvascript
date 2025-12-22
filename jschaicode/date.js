@@ -10,6 +10,7 @@ const minutes=mydate.getMinutes();
 const seconds=mydate.getSeconds();
 console.log(`Current Time: ${hours}:${minutes}:${seconds}`);
 const indiaDate=mydate.toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});
+
 console.log("India Date and Time:",indiaDate);
 
 const ind=new Date(indiaDate);

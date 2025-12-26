@@ -114,10 +114,6 @@ const items = students.map(s=>({
   
 }));  
 
-
-
-
-
 console.log(items);
 
 const dailysala=2000;
@@ -139,3 +135,13 @@ const getmsal=userss.map(u=>({
 }))
 
 console.log(getmsal);
+
+
+
+const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sqr=myNumers.map((n)=>n*n)
+        .filter(n=>n>20)
+        .map(n=>n+n);
+
+console.log("Square Numbers:",sqr);
